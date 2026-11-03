@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Khalisa Akmaloni – Data Science &amp; Photography, Auckland</title>
+<meta name="description" content="Portfolio of Khalisa Akmaloni, a Data Science student at AUT and photographer based in Auckland, New Zealand.">
+<meta property="og:title" content="Khalisa Akmaloni – Data Science &amp; Photography">
+<meta property="og:description" content="A little bit of art, a little bit of science.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🌸%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F9F5F0;--surface:#FFFFFF;--ink:#4A4144;--muted:#6f6468;--blush:#EBCFD3;--rose:#B98692;--line:rgba(74,65,68,.18);
+--serif:"Cormorant Garamond",Georgia,serif;--sans:"DM Sans",system-ui,sans-serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#2a2326;--surface:#352d30;--ink:#f3ebe6;--muted:#c9bcbc;--blush:#5a4247;--rose:#d4a1ac;--line:rgba(243,235,230,.2)}}
+:root[data-theme="dark"]{--bg:#2a2326;--surface:#352d30;--ink:#f3ebe6;--muted:#c9bcbc;--blush:#5a4247;--rose:#d4a1ac;--line:rgba(243,235,230,.2)}
+html{scroll-behavior:smooth;scroll-padding-top:calc(5rem + env(safe-area-inset-top,0px))}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.7 var(--sans)}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.05;margin:0}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--rose);outline-offset:3px}
+.wrap{max-width:1200px;margin:0 auto;padding:0 clamp(1.25rem,4vw,3rem)}
+section{padding:clamp(4.5rem,10vw,8rem) 0}
+header.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;justify-content:space-between;align-items:center;min-height:4rem;gap:1rem}
+.brand{font:500 1.5rem var(--serif);text-decoration:none}
+.nav ul{display:flex;gap:clamp(.9rem,2.5vw,2rem);list-style:none;margin:0;padding:0;font-size:.95rem;overflow-x:auto;scrollbar-width:none}.nav ul::-webkit-scrollbar{display:none}
+.nav a{text-decoration:none;color:var(--muted);padding:.4rem 0;border-bottom:1px solid transparent;transition:color .2s,border-color .2s;white-space:nowrap}
+.nav a:hover{color:var(--ink);border-color:var(--rose)}
+/* hero */
+.hero{min-height:calc(100svh - 4rem);display:grid;align-items:center;padding:3rem 0 5rem}
+.hero .wrap{display:grid;grid-template-columns:1.25fr 1fr;gap:clamp(2rem,6vw,5rem);align-items:end}
+.hero h1{font-size:clamp(3.2rem,8.5vw,7.2rem);letter-spacing:-.02em;animation:rise 1.1s cubic-bezier(.2,.7,.2,1) both}
+.hero h1 em{color:var(--rose)}
+.hero p{max-width:34rem;color:var(--muted);margin:1.75rem 0 0;font-size:1.15rem}
+.tiles{display:grid;gap:1rem}
+.tile{display:flex;flex-direction:column;justify-content:flex-end;min-height:13rem;padding:1.5rem;border:1px solid var(--line);border-radius:999px 999px 6px 6px;text-decoration:none;background:linear-gradient(170deg,var(--blush),var(--surface));transition:transform .35s,border-color .35s}
+.tile:nth-child(2){margin-left:2.5rem;border-radius:6px 6px 999px 999px;justify-content:flex-start;background:linear-gradient(10deg,var(--blush),var(--surface))}
+.tile:hover{transform:translateY(-4px);border-color:var(--rose)}
+.tile small{color:var(--muted)}.tile span{font:italic 2rem/1.1 var(--serif)}
+.scroll{position:absolute;left:50%;bottom:1.5rem;width:1px;height:3rem;background:linear-gradient(var(--rose),transparent);animation:drip 2s infinite}
+.hero{position:relative}
+@keyframes rise{from{opacity:0;transform:translateY(24px)}}
+@keyframes drip{50%{transform:scaleY(.4);transform-origin:top}}
+/* headings */
+.head{display:flex;justify-content:space-between;align-items:end;gap:2rem;flex-wrap:wrap;margin-bottom:3rem;border-bottom:1px solid var(--line);padding-bottom:1.5rem}
+.head h2{font-size:clamp(2.6rem,6vw,4.5rem)}
+.head p{max-width:26rem;margin:0;color:var(--muted)}
+.white{background:var(--surface)}
+/* gallery */
+.filters{display:flex;gap:.6rem;flex-wrap:wrap;margin-bottom:2rem}
+.filters button,.btn{font:inherit;font-size:.95rem;padding:.55rem 1.2rem;border:1px solid var(--line);border-radius:999px;background:transparent;color:var(--ink);cursor:pointer;text-decoration:none;display:inline-block;transition:background .2s,color .2s,border-color .2s}
+.filters button:hover{border-color:var(--rose)}
+.filters button[aria-pressed=true],.btn.solid{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.btn.solid:hover{background:var(--rose);border-color:var(--rose);color:#2a2326}
+.grid{columns:3 260px;column-gap:1.5rem}
+.photo{break-inside:avoid;margin:0 0 1.5rem;display:block;width:100%;padding:0;border:0;background:none;text-align:left;cursor:zoom-in;color:inherit;font:inherit}
+.photo .frame{overflow:hidden;background:var(--blush)}
+.photo img{display:block;width:100%;height:auto;transition:transform .6s}
+.photo:hover img{transform:scale(1.03)}
+.photo b{display:block;font:500 1.35rem var(--serif);margin-top:.7rem}
+.photo small{color:var(--muted)}
+/* projects */
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:1.5rem}
+.card{background:var(--bg);border:1px solid var(--line);display:flex;flex-direction:column;transition:border-color .3s}
+.card:hover{border-color:var(--rose)}
+.card img{width:100%;height:auto;display:block}
+.card div{padding:1.5rem;display:flex;flex-direction:column;gap:.9rem;flex:1}
+.card h3{font-size:1.7rem}.card p{margin:0;color:var(--muted);font-size:1rem}
+.tags{display:flex;gap:.4rem;flex-wrap:wrap;list-style:none;margin:0;padding:0}
+.tags li{font-size:.8rem;padding:.15rem .7rem;border-radius:999px;background:var(--blush)}
+.draft{font-size:.85rem;color:var(--muted);font-style:italic}
+.card a,.card .na{margin-top:auto;font-size:.95rem}
+.na{color:var(--muted)}
+/* about */
+.about{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(2rem,6vw,5rem);align-items:start}
+.portrait{aspect-ratio:4/5;border-radius:999px 999px 6px 6px;overflow:hidden;background:var(--blush);border:1px solid var(--line)}
+.portrait img{width:100%;height:100%;object-fit:cover;display:block}
+.about p{max-width:38rem}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(11rem,1fr));gap:.5rem 2rem;list-style:none;padding:0;margin:1.5rem 0 2rem;border-top:1px solid var(--line)}
+.skills li{padding:.55rem 0;border-bottom:1px solid var(--line)}
+/* contact */
+.contact h2{font-size:clamp(3rem,8vw,6rem)}
+.links{list-style:none;padding:0;margin:3rem 0 0;border-top:1px solid var(--line)}
+.links li{display:flex;justify-content:space-between;gap:1rem;padding:1.2rem 0;border-bottom:1px solid var(--line);flex-wrap:wrap}
+.links a{font:italic 1.6rem var(--serif);text-decoration:none;border-bottom:1px solid var(--rose)}
+.links .na{font-size:.95rem}
+footer{border-top:1px solid var(--line);padding:2rem 0;font-size:.9rem;color:var(--muted)}
+footer .wrap{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+footer a{margin-right:1rem}
+/* lightbox */
+dialog{border:0;padding:0;background:transparent;max-width:100vw;max-height:100vh;width:100%;height:100%;color:#fff}
+dialog::backdrop{background:rgba(30,24,26,.92)}
+.lb{display:grid;grid-template-rows:1fr auto;height:100%;padding:1.5rem;gap:1rem}
+.lb img{max-width:100%;max-height:calc(100vh - 11rem);margin:auto;display:block;object-fit:contain}
+.lb p{text-align:center;margin:0;max-width:40rem;justify-self:center}
+.lb button{position:absolute;background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.4);border-radius:999px;width:2.75rem;height:2.75rem;font-size:1.3rem;cursor:pointer}
+.lb button:hover{background:var(--rose);color:#2a2326}
+.lb .x{top:1rem;right:1rem}.lb .pv{left:1rem;top:50%}.lb .nx{right:1rem;top:50%}
+@media(max-width:800px){.hero .wrap,.about{grid-template-columns:1fr}.tile:nth-child(2){margin-left:0}.tile{min-height:9rem}.portrait{max-width:20rem}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<header class="nav"><div class="wrap">
+<a class="brand" href="#home">Khalisa Akmaloni</a>
+<nav aria-label="Main"><ul>
+<li><a href="#data-science">Data Science</a></li><li><a href="#photography">Photography</a></li><li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li>
+</ul></nav></div></header>
+
+<main id="home">
+<section class="hero"><div class="wrap">
+<div>
+<h1>A little bit of art, a little bit of <em>science.</em></h1>
+<p>Hi, I’m Khalisa – a Data Science student and photographer based in Auckland, New Zealand. Exploring the intersection of technology, data and creativity.</p>
+</div>
+<div class="tiles">
+<a class="tile" href="#data-science"><small>01 / Data Science</small><span>Projects, code &amp; analysis</span></a>
+<a class="tile" href="#photography"><small>02 / Photography</small><span>Events, portraits &amp; creative work</span></a>
+</div></div>
+<div class="scroll" aria-hidden="true"></div>
+</section>
+
+<section id="data-science" class="white"><div class="wrap">
+<div class="head"><h2>Data Science</h2><p>Draft projects from my degree and upcoming IBM Data Science work. Details and results will be added as each one is completed.</p></div>
+<div class="cards" id="projects"></div>
+</div></section>
+
+<section id="photography"><div class="wrap">
+<div class="head"><h2>Photography</h2><p>Event coverage, portraits and creative work. Select any image to view it full screen.</p></div>
+<div class="filters" id="filters" role="group" aria-label="Filter photographs"></div>
+<div class="grid" id="gallery"></div>
+</div></section>
+
+<section id="about" class="white"><div class="wrap about">
+<div class="portrait"><img id="portrait" alt="Portrait of Khalisa – placeholder" width="800" height="1000"></div>
+<div>
+<h2 style="font-size:clamp(2.6rem,6vw,4.5rem);margin-bottom:1.5rem">About me</h2>
+<p>I’m Khalisa, based in Auckland and currently a second-year student at Auckland University of Technology (AUT). I’m studying a Bachelor of Computer and Information Sciences (BCIS), majoring in Data Science, with a double minor in Mathematical Modelling and Computation, and Finance.</p>
+<p>I love turning messy data into something clear and useful, and I’m building my skills with each course and project. Outside of study, I joined AUT STEM Women as a photographer in September 2026, where I’m developing my photography, communication and teamwork skills while supporting the club’s events.</p>
+<p>Technology, quantitative finance and creative projects all pull me in – and I like how they feed one another.</p>
+<ul class="skills"><li>Python</li><li>R &amp; RStudio</li><li>SQL</li><li>MATLAB</li><li>Data visualisation</li><li>Statistical analysis</li><li>Time series forecasting</li><li>Regression analysis</li><li>Data cleaning</li><li>Database design</li><li>Excel</li></ul>
+<span id="cv"></span>
+</div></div></section>
+
+<section id="contact" class="contact"><div class="wrap">
+<h2>Let’s talk.</h2>
+<p style="max-width:34rem;color:var(--muted)">For internships, graduate opportunities, photography enquiries or a friendly hello.</p>
+<ul class="links" id="links"></ul>
+</div></section>
+</main>
+
+<footer><div class="wrap"><span>© <span id="yr"></span> Khalisa Akmaloni · Auckland, New Zealand</span>
+<nav aria-label="Footer"><a href="#data-science">Data Science</a><a href="#photography">Photography</a><a href="#about">About</a><a href="#contact">Contact</a></nav></div></footer>
+
+<dialog id="lb" aria-label="Image viewer"><div class="lb">
+<button class="x" aria-label="Close">✕</button><button class="pv" aria-label="Previous photo">‹</button><button class="nx" aria-label="Next photo">›</button>
+<img id="lbimg" alt=""><p id="lbcap"></p></div></dialog>
+
+<script>
+/* ============ EDIT ME ============ */
+// 1. Your links. Leave "" to show a “coming soon” note instead.
+const CONFIG = {
+  email: "Khalisa.akm@gmail.com", linkedin: "", github: "", instagram: "",
+  cv: "",            // e.g. "files/Khalisa-Akmaloni-CV.pdf"
+  portrait: ""       // e.g. "images/portrait.jpg"
+};
+// 2. Photos. Set src to your file (e.g. "images/wedding-01.jpg") and w/h to its pixel size.
+//    cat: "event" | "portrait" | "creative". Leave src empty to show a placeholder.
+const PHOTOS = [
+  {src:"", w:1200, h:800,  cat:"event",    title:"Event photo 1",    event:"Event name", desc:"Add a short description."},
+  {src:"", w:800,  h:1100, cat:"portrait", title:"Portrait 1",       event:"Session name", desc:"Add a short description."},
+  {src:"", w:1000, h:1000, cat:"creative", title:"Creative photo 1", event:"Series name", desc:"Add a short description."},
+  {src:"", w:800,  h:1200, cat:"portrait", title:"Portrait 2",       event:"Session name", desc:"Add a short description."},
+  {src:"", w:1200, h:800,  cat:"event",    title:"Event photo 2",    event:"Event name", desc:"Add a short description."},
+  {src:"", w:900,  h:1200, cat:"creative", title:"Creative photo 2", event:"Series name", desc:"Add a short description."},
+  {src:"", w:1200, h:900,  cat:"event",    title:"Event photo 3",    event:"Event name", desc:"Add a short description."},
+  {src:"", w:800,  h:1000, cat:"portrait", title:"Portrait 3",       event:"Session name", desc:"Add a short description."}
+];
+// 3. Projects. Add your GitHub link in repo, and a screenshot path in image.
+const PROJECTS = [
+  {title:"Time Series Forecasting & Regression Analysis", desc:"Analysed time series data in R to identify trends, seasonal patterns and autocorrelation. Built and compared benchmark and regression forecasting models, evaluating accuracy with RMSE and MAPE.", tools:["R","Time series","Regression"], repo:"", image:""},
+  {title:"Applied Data Analysis", desc:"Analysed real-world organisational datasets in R using statistical testing, including ANOVA and post-hoc comparisons, and communicated the findings in written reports.", tools:["R","ANOVA","Statistical testing"], repo:"", image:""},
+  {title:"Database Design & SQL", desc:"Designed a relational database for a business case study, from conceptual and logical data models through to SQL queries that retrieve and analyse the data.", tools:["SQL","Database design"], repo:"", image:""},
+  {title:"IBM Data Science Certificate Project", desc:"Coming soon – to be added as the course is completed.", tools:["Python","SQL"], repo:"", image:""}
+];
+const CATS = {all:"All", event:"Event photography", portrait:"Portraits", creative:"Creative"};
+/* ============ END EDIT ============ */
+
+const $ = s => document.querySelector(s);
+const esc = t => String(t).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+function ph(w, h, label){
+  const s = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${w} ${h}"><rect width="100%" height="100%" fill="#EBCFD3"/><rect x="${w*.04}" y="${h*.04}" width="${w*.92}" height="${h*.92}" fill="none" stroke="#B98692" stroke-width="2"/><text x="50%" y="50%" text-anchor="middle" font-family="Georgia,serif" font-size="${Math.max(w,h)/28}" fill="#4A4144">${esc(label)}</text><text x="50%" y="${h*.5+Math.max(w,h)/20}" text-anchor="middle" font-family="sans-serif" font-size="${Math.max(w,h)/48}" fill="#6f6468">placeholder ${w}×${h}</text></svg>`;
+  return "data:image/svg+xml," + encodeURIComponent(s);
+}
+const imgOf = p => p.src || ph(p.w, p.h, p.title);
+
+/* gallery */
+let cur = "all", shown = [];
+function renderFilters(){
+  $("#filters").innerHTML = Object.entries(CATS).map(([k,v]) => `<button type="button" data-c="${k}" aria-pressed="${k===cur}">${v}</button>`).join("");
+}
+function renderGallery(){
+  shown = PHOTOS.filter(p => cur === "all" || p.cat === cur);
+  $("#gallery").innerHTML = shown.map((p,i) => `<button type="button" class="photo" data-i="${i}" aria-label="Open ${esc(p.title)}"><div class="frame"><img src="${imgOf(p)}" width="${p.w}" height="${p.h}" alt="${esc(p.title)} – ${esc(p.event)}" loading="lazy" decoding="async"></div><b>${esc(p.title)}</b><small>${esc(p.event)}</small></button>`).join("");
+}
+$("#filters").addEventListener("click", e => { const b = e.target.closest("button"); if(!b) return; cur = b.dataset.c; renderFilters(); renderGallery(); });
+
+/* lightbox */
+const lb = $("#lb"); let li = 0;
+function show(i){ li = (i + shown.length) % shown.length; const p = shown[li];
+  $("#lbimg").src = imgOf(p); $("#lbimg").alt = p.title + " – " + p.event;
+  $("#lbcap").innerHTML = `<b style="font:500 1.5rem var(--serif)">${esc(p.title)}</b><br>${esc(p.event)} – ${esc(p.desc)}`; }
+$("#gallery").addEventListener("click", e => { const b = e.target.closest(".photo"); if(!b) return; show(+b.dataset.i); lb.showModal(); });
+lb.querySelector(".x").onclick = () => lb.close();
+lb.querySelector(".pv").onclick = () => show(li - 1);
+lb.querySelector(".nx").onclick = () => show(li + 1);
+lb.addEventListener("keydown", e => { if(e.key === "ArrowLeft") show(li - 1); if(e.key === "ArrowRight") show(li + 1); });
+lb.addEventListener("click", e => { if(e.target === lb) lb.close(); });
+
+/* projects */
+$("#projects").innerHTML = PROJECTS.map(p => `<article class="card"><img src="${p.image || ph(800,500,"Screenshot or chart")}" width="800" height="500" alt="${p.image ? esc(p.title) + " visualisation" : "Placeholder for a project visualisation"}" loading="lazy"><div><span class="draft">${p.desc.startsWith("Draft") || p.desc.startsWith("Coming") ? "Draft" : "Project"}</span><h3>${esc(p.title)}</h3><p>${esc(p.desc)}</p><ul class="tags">${p.tools.map(t => `<li>${esc(t)}</li>`).join("")}</ul>${p.repo ? `<a href="${esc(p.repo)}" target="_blank" rel="noopener">View on GitHub</a>` : `<span class="na">GitHub link coming soon</span>`}</div></article>`).join("");
+
+/* about, contact */
+$("#portrait").src = CONFIG.portrait || ph(800,1000,"Your portrait");
+$("#cv").innerHTML = CONFIG.cv ? `<a class="btn solid" href="${esc(CONFIG.cv)}" download>Download my CV</a>` : `<span class="na">CV available soon</span>`;
+const L = [["Email", CONFIG.email && "mailto:" + CONFIG.email, CONFIG.email],["LinkedIn", CONFIG.linkedin, "LinkedIn"],["GitHub", CONFIG.github, "GitHub"],["Instagram (photography)", CONFIG.instagram, "Instagram"]];
+$("#links").innerHTML = L.map(([n,h,t]) => `<li><span>${n}</span>${h ? `<a href="${esc(h)}" target="_blank" rel="noopener">${esc(t)}</a>` : `<span class="na">Link coming soon</span>`}</li>`).join("");
+$("#yr").textContent = new Date().getFullYear();
+renderFilters(); renderGallery();
+</script>
+</body>
+</html>
